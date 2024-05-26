@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7: División Euclides</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="text-primary">Ejercicio 7: División Euclides</h1>
+        </div>
+        <!-- Formulario para ingresar los números -->
+        <form id="euclidesForm">
+            <div class="form-group">
+                <label for="numero1">Primer número:</label>
+                <input type="number" class="form-control" id="numero1" name="numero1" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="numero2">Segundo número:</label>
+                <input type="number" class="form-control" id="numero2" name="numero2" min="0" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <!-- Resultados -->
+        <div id="resultado" class="mt-4">
+            <p id="cociente"></p>
+            <p id="resto"></p>
+        </div>
+        <!-- Botón Volver -->
+        <button type="button" class="btn btn-secondary mt-3" id="volver">Volver</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="index.js"></script>
+</body>
+</html>

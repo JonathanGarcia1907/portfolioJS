@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5: Mayúsculas o Minúsculas</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="text-primary">Ejercicio 5: Mayúsculas o Minúsculas</h1>
+        </div>
+        <!-- Formulario para ingresar una cadena de caracteres -->
+        <form id="cadenaForm">
+            <div class="form-group">
+                <label for="cadena">Cadena de caracteres:</label>
+                <input type="text" class="form-control" id="cadena" name="cadena" required>
+                <small class="form-text text-muted">Ingrese una cadena sin números.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Determinar</button>
+        </form>
+        <!-- Resultados -->
+        <div id="resultado" class="mt-4">
+            <p id="tipoCadena"></p>
+        </div>
+        <!-- Botón Volver -->
+        <button type="button" class="btn btn-secondary mt-3" id="volver">Volver</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="index.js"></script>
+</body>
+</html>

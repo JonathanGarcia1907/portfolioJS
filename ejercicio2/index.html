@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Circunferencia</title>
+    <!--  CSS de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlaze Estilo Personal -->
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="text-primary">Ejercicio 2: Circunferencia</h1>
+        </div>
+        <!-- Formulario para ingresar el radio -->
+        <form id="circunferenciaForm">
+            <div class="form-group">
+                <label for="radio">Radio de la circunferencia:</label>
+                <input type="number" class="form-control" id="radio" name="radio" step="0.1" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calcular</button>
+        </form>
+        <!-- Resultados -->
+        <div id="resultados" class="mt-4">
+            <p id="longitud"></p>
+            <p id="area"></p>
+            <p id="volumen"></p>
+        </div>
+        <!-- Botón Volver -->
+        <button type="button" class="btn btn-secondary mt-3" id="volver">Volver</button>
+    </div>
+
+    <!--  JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="index.js"></script>
+</body>
+</html>
